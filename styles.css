@@ -1,0 +1,79 @@
+/* Styles.css */
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    text-shadow: 0 0 10px #fff;
+}
+
+/* Game Container */
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0ff;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    box-shadow: 0 0 40px #ff0;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background: #222;
+    text-shadow: 0 0 5px #fff;
+}
+/* Efek Neon Glow untuk Teks */
+h1 {
+    font-size: 3rem;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #00f, 0 0 40px #00f;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Animasi Neon Berkedip */
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #00f, 0 0 40px #00f;
+    }
+    to {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #00f, 0 0 30px #00f, 0 0 50px #00f;
+    }
+}
+
+/* Efek Neon untuk Game Cards */
+.game-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    transition: 0.3s;
+    animation: pulseGlow 2s infinite alternate;
+}
+
+/* Animasi Glow Berkedip */
+@keyframes pulseGlow {
+    from {
+        box-shadow: 0 0 10px #0ff;
+    }
+    to {
+        box-shadow: 0 0 20px #0ff, 0 0 30px #00f;
+    }
+}
